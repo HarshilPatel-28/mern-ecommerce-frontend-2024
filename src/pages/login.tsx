@@ -22,9 +22,9 @@ const Login = () => {
                 name:user.displayName!,
                 email:user.email!,
                 photo:user.photoURL!,
-                gender:gender,
+                gender:gender!,
                 role:"user",
-                dob:date,
+                dob:date!,
                 _id:user.uid,
             });
 

@@ -8,8 +8,8 @@ import { FetchBaseQueryError } from "@reduxjs/toolkit/query/react";
 import { MessageResponse } from "../types/api-types";
 
 const Login = () => {
-    const [gender, setGender]= useState();
-    const [date, setDate]= useState();
+    const [gender, setGender]= useState("");
+    const [date, setDate]= useState("");
 
     const [login] = useLoginMutation()
 

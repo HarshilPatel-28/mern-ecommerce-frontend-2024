@@ -17,8 +17,8 @@ export const store = configureStore({
     [userReducer.name]: userReducer.reducer,
     [cartReducer.name]: cartReducer.reducer,
   },
-  middleware: (getDefaultMiddleware) => [
-    ...getDefaultMiddleware(),
+  middleware: (mid) => [
+    ...mid(),
     userAPI.middleware,
     productAPI.middleware,
     orderApi.middleware,
